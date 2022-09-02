@@ -1,0 +1,101 @@
+* {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #08003c;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #003264, #08003c, #030014);
+}
+
+h1 {
+  font-size: 48px;
+  color: #003264;
+  text-align: center;
+  margin: 30px auto 0px;
+  text-shadow: -1px 0 lightcyan, 0 1px lightcyan, 1px 0 lightcyan, 0 -1px lightcyan, 8px 17px 4px #a064ff66, 16px -4px 4px #ffc8e666, -17px 6px 4px #00fffa66;
+}
+
+h1:hover {
+  color: lightcyan;
+  text-shadow: -1px 0 #003264, 0 1px #003264, 1px 0 #003264, 0 -1px #003264, 1px 2px 10px white;
+  transition: color 1s, text-shadow 1s;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  gap: 10px 10px;
+  margin: 0 auto;
+}
+
+/*.equal {
+border: 2px blue solid;
+grid-column: 3 / 5;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}*/
+button {
+  border-radius: 40%;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  margin: 8px;
+  font-size: 24px;
+  background-color: #e0ffff33;
+}
+
+button:hover {
+  background-image: url("button.png");
+  background-size: cover;
+  background-color: #00288c;
+  opacity: 0.9;
+  color: lightcyan;
+  border-color: teal;
+  box-shadow: 0 8px #003737;
+  transition: background-color 0.4s, color 1s;
+}
+
+button:active {
+  box-shadow: 0 3px #003737;
+  transform: translateY(5px);
+}
+
+.value {
+  display: flex;
+  justify-content: end;
+  padding: 0 2em;
+}
+
+.big:hover {
+  opacity: 1;
+  box-shadow: 2px 8px #003737, 3px 3px 30px lightcyan;
+}
+
+.big {
+  border-radius: 40px;
+  border: 0;
+  background-image: url("background.png");
+  background-size: 100% 100%;
+  width: 400px;
+  margin: 5vh auto;
+  padding: 1em;
+  box-shadow: 3px 3px 30px lightcyan;
+  opacity: 0.8;
+  transition: opacity 0.4s, box-shadow 1s;
+}
+
+.secondBig {
+  background-color: #ffffff66;
+  margin: 2em 2em 0;
+  padding: 2em 0;
+  border-radius: 20px;
+}
+
+.secondBig:hover {
+  background-color: hsla(0, 0%, 100%, 0.6);
+  transition: background-color 0.6s;
+}
